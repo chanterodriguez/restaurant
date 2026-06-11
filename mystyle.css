@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+
+
+/*menu*/
+table,td{
+    border: 1px solid black;
+    border-collapse: collapse
+}
+
+td,th{
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+th{
+    background-color: gray;
+}
+.highlight{
+    font-weight: bold;
+}
