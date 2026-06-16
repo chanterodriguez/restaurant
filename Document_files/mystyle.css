@@ -63,7 +63,7 @@ body{
 .dish-item{
     border: 2px dashed black;
     padding: 10px;
-    background-color: rgb(207, 214, 214);
+    background-color: rgb(223, 232, 232);
 }
 
 .dish-item h3 {
