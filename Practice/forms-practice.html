@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="">
+        <label for="first-name"> First Name</label>
+        <input type="text" id="first-name"/>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name"/>
+        <input type="submit" value="submit"/>
+        </form>
+
+        <p>Select your favorite Programming Language</p>
+        <form>
+            <label for="java">Java</label>
+            <input type="radio" id="java" name="Language" value="java">
+            <label for="python">python</label>
+            <input type="radio" id="python" name="Language" value="python">
+            <label for="C++">C++</label>
+            <input type="radio" id="C++" name="Language" value="C++">
+            </form>
+
+            <p>Select the options that applies to you:</p>
+            <form>
+                <input type="checkbox" id="vehicles1" name="vehicles1" value="bike"/>
+                <label for="vehicles1">I have a bike</label>
+                <input type="checkbox" id="vehicles2" name="vehicles2" value="bike"/>
+                <label for="vehicles2">I have a car</label>
+                <input type="checkbox" id="vehicles3" name="vehicles3" value="bike"/>
+                <label for="vehicles3">I have a scooter</label>
+            </form>
+
+            <p>Related elements inside a form</p>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="first-name"> First Name</label>
+        <input type="text" id="first-name"/>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name"/>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vehicles</legend>
+                    <label for="cars">Choose the type of car</label>
+                    <select id="cars" name="cars">
+                    <option value="volvo">volvo</option>
+                    <option value="nissan">nissan</option>
+                    <option value="toyota">toyota</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>additional information</legend>
+                    <label for="suggestions">suggestions</label>
+                    <textarea name="suggestion" id="suggestion"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>User information</legend>
+                    <label for="user name"> User Name</label>
+                    <input type="text" id="username"/>
+                    <label for="password">password</label>
+                    <input type="password" id="password"/>
+                    <label for="birthday">birthday</label>
+                    <input type="date" id="birthday">
+                    <label for="age">age</label>
+                    <input type="number" id="age">
+
+                </fieldset>
+            </form>
+    </div>
+    
+</body>
+</html>

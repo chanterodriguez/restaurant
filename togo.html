@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <div class="menu-nav">
+            <div>
+        <i class="fa-solid fa-bars"></i>
+        </div>
+                <h1>Fast Dining Tacos</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="togo.html">To Go</a>
+            </nav>
+
+            <div><i class="fa-solid fa-cart-arrow-down"></i>
+        </div>
+        </div>
+    </header>
+    <section class="container-checkout">        
+    <h1>Check Out</h1>
+        <div class="form-flex">
+            <div>
+            <img src="tacomain.jpg" alt="main taco">
+                </div>
+                <div class="form-container">
+                <h2>Tacos are fun</h2>
+                <form>
+                    <div class="input-container">
+                        <label for="size">size:</label>
+                        <select id="size" name="size">
+                            <option value="small">small
+                            </option>
+                            <option value="medium">medium
+                            </option>
+                            <option value="large">large
+                            </option>
+                        </select>
+                    </div>
+                </form>
+                
+                <form>
+                    <div class="input-container">
+                        <label for="price">Price:</label>
+                        <input type="number" id="price" name="price"/>
+                    </div>
+                    <div class="input-container">
+                        <label for="Quantity">Quantity:
+                        </label>
+                        <input type="number" id="Quantity" name="Quantity"/>
+                    </div>
+                    <div class="input-container">
+                        <label for="Description">Description:
+                        </label>
+                        <textarea type="text" id="Description" name="Description"></textarea>
+                    </div>
+                    <div>
+                    <button class="submit-btn">Add</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+    </section> 
+
+    <section class="container-billing">    
+        <div>
+                    <h2>Billing Details</h2>
+            <form>
+                <div class="input-container-billdetail">
+                    <label for="first-name"> First Name</label>
+                    <input type="text" id="first-name"/>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name"/>
+                </div>
+                <div class="input-container-billdetail">
+                    <label for="street"> street</label>
+                    <input type="text" id="street"/>
+                    <label for="city"> city</label>
+                    <input type="text" id="city"/>
+                    <label for="state">state</label>
+                    <input type="text" id="state"/>
+                </div>
+            </form>
+
+                <h2>Payment Method</h2>
+            
+            <form>
+                <div class="input-container-paymethod">
+                <label for="Cash on Delivery">Cash on Delivery</label>
+                <input type="radio" id="Cash on Delivery" name="Language" value="Cash on Delivery">
+                <label for="Credit Card">Credit Card</label>
+                <input type="radio" id="Credit Card" name="Language" value="Credit Card">
+                <label for="Check">Check</label>
+                <input type="radio" id="Check" name="Language" value="Check">
+                </div>
+            </form>
+
+
+        <div class="payment-form-container">
+            <h2>Secure Checkout</h2>
+        <form action="/process-payment" method="POST">
+        <!-- Cardholder Name -->
+        <div>
+            <label for="cardholder-name">Cardholder Name</label>
+            <input 
+                type="text" 
+                id="cardholder-name" 
+                name="cardholder_name" 
+                autocomplete="cc-name" 
+                required 
+                placeholder="John Doe">
+        </div>
+
+        <!-- Card Number -->
+        <div>
+            <label for="card-number">Card Number</label>
+            <input 
+                type="text" 
+                id="card-number" 
+                name="card_number" 
+                inputmode="numeric" 
+                autocomplete="cc-number" 
+                pattern="[0-9\s]{13,19}" 
+                maxlength="19" 
+                required 
+                placeholder="xxxx xxxx xxxx xxxx">
+        </div>
+
+        <div class="form-row">
+            <!-- Expiration Date -->
+            <div>
+                <label for="card-expiry">Expiry Date</label>
+                <input 
+                    type="text" 
+                    id="card-expiry" 
+                    name="card_expiry" 
+                    inputmode="numeric" 
+                    autocomplete="cc-exp" 
+                    pattern="(0[1-9]|1[0-2])\/[0-9]{2}" 
+                    maxlength="5" 
+                    required 
+                    placeholder="MM/YY">
+            </div>
+
+            <!-- CVV / Security Code -->
+            <div>
+                <label for="card-cvc">CVC / CVV</label>
+                <input 
+                    type="text" 
+                    id="card-cvc" 
+                    name="card_cvc" 
+                    inputmode="numeric" 
+                    autocomplete="cc-csc" 
+                    pattern="[0-9]{3,4}" 
+                    maxlength="4" 
+                    required 
+                    placeholder="123">
+            </div>
+            </form>
+        </div>
+
+ <h2>Additional Information</h2>
+            
+            <form>
+                <div class="input-container-billing">
+                    <label for="suggestions">Additional Information</label>
+                    <textarea name="suggestion" id="suggestion"></textarea>
+                </div>
+            </form>
+
+        </div>
+        <div class="payment-form-container">
+            <button type="submit" class="submit-btn">Check Out</button>
+            </form>
+        </div>
+    </div>
+    </section>  
+    </header>
+    <main>
+        
