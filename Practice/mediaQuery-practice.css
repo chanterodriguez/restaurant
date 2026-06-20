@@ -1,0 +1,68 @@
+/*Desktop*/
+html{
+    font-size: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: aquamarine;
+    height: 30vh ;
+
+}
+main{
+background-color: blueviolet;
+height: 40vh;
+}
+
+footer{
+background-color: brown;
+height: 30vh;
+}
+
+p {
+    width: 70%;
+    margin: 10px auto;
+    background-color: pink;
+}
+
+.home-link{
+    display: inline-block;
+}
+
+/*tablet view*/
+@media((min-width:601px) and (max-width:768px)){
+    html{
+        font-family: 87.5%;
+    }
+    header{
+        background-color: orange;
+    }
+    p{
+        width: 85%;
+    };
+    .home-link{
+    display: none;
+    }
+}
+
+/*phone*/
+@media((max-width:600px)){
+    html{
+        font-size: 62.5%;/*12px*/
+    }
+    header{
+        background-color: purple;
+    }
+    p{
+        width: 100%;
+    }
+    .home-link{
+    display: none;
+    }
+}
